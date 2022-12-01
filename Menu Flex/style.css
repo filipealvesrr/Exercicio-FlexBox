@@ -23,14 +23,13 @@
 
 .menu li {
     margin-left: 30px;
+    font-size: 15px;
 }
 
 .hover:hover {
     background-color: #5BC241;
-    font-size: 15px;
     padding: 10px;
     color: #FFF;
-
 }
 
 .register {
@@ -38,4 +37,49 @@
     padding: 10px 20px;
     border-radius: 10px;
     color: #FFF;
+}
+
+@media(max-width:780px) {
+    .logo h1 {
+        font-size: 0px;
+    }
+}
+
+
+@media(max-width:690px) {
+    .logo {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .logo h1 {
+        font-size: 40px;
+        display: inline;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+    .menu {
+        display: block;
+        margin-top: 100px;
+    }
+
+    .menu li {
+        margin-left: 0px;
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .hover:hover {
+        padding: 20px 40px;
+    }
+
+    .register {
+        font-size: 18px;
+    }
+
+    
 }
