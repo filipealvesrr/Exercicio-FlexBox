@@ -68,13 +68,13 @@ body {
     .header {
         flex-direction: column;
     }
-    
+
     .logo h1 {
         font-size: 4rem;
     }
 
     .menu {
-        flex-direction: column; 
+        flex-direction: column;
         margin-top: 50px;
     }
 
@@ -92,10 +92,8 @@ body {
     }
 
     .register {
-        font-size: 1.8rem;
+        font-size: 1.8rem;    
     }
-
-    
-} 
+}
 
 
