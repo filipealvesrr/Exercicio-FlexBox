@@ -1,34 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+}
 .header {
     display: flex;
-    padding: 50px 45px;
+    padding: 45px;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    font-weight: 400;
 }
 
 .logo {
     display: flex;
+    align-items: center;
 }
 
 .logo h1 {
     margin-left: 5px;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 800;
-    align-self: center;
 }
 
 .menu {
     display: flex;
+    align-items: center;
+
 }
 
 .menu li {
-    margin-left: 30px;
-    font-size: 15px;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
+.hover {
+    padding: 10px 5px;
+    transition: 0.3s ease-in-out;
+    margin-left: 1.5rem;
+}
 .hover:hover {
     background-color: #5BC241;
-    padding: 10px;
     color: #FFF;
 }
 
@@ -37,6 +53,8 @@
     padding: 10px 20px;
     border-radius: 10px;
     color: #FFF;
+    font-weight: 300;
+    margin-left: 2rem;
 }
 
 @media(max-width:780px) {
@@ -47,39 +65,37 @@
 
 
 @media(max-width:690px) {
-    .logo {
-        width: 100%;
-        text-align: center;
-        justify-content: center;
+    .header {
+        flex-direction: column;
     }
-
+    
     .logo h1 {
-        font-size: 40px;
-        display: inline;
+        font-size: 4rem;
     }
 
-    nav {
-        width: 100%;
-        text-align: center;
-    }
     .menu {
-        display: block;
-        margin-top: 100px;
+        flex-direction: column; 
+        margin-top: 50px;
     }
 
     .menu li {
-        margin-left: 0px;
-        font-size: 40px;
-        margin-bottom: 50px;
+        padding: 33px 0;
     }
 
-    .hover:hover {
-        padding: 20px 40px;
+    .menu li:last-child {
+        margin-top: 20px
+    }
+
+    .hover{
+        font-size: 4rem;
+        padding: 17px 40px;
     }
 
     .register {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     
-}
+} 
+
+
