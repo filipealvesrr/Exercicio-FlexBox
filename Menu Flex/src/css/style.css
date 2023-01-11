@@ -57,6 +57,10 @@ body {
     margin-left: 2rem;
 }
 
+.register:hover {
+    filter: brightness(90%);
+}
+
 @media(max-width:780px) {
     .logo h1 {
         font-size: 0px;
